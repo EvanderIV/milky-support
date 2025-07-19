@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setup Guide - Milky Support</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" href="favicon.jpg" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="../"><div class="logo">Milky Support</div></a>
+      <div class="nav-links">
+        <a>Setup Guide</a>
+        <a href="../troubleshoot">Troubleshooting</a>
+        <a href="https://discord.com/invite/sqeKHhBJse" target="_blank"
+          >Discord</a
+        >
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="quick-start">
+        <h1>Quick Start Guide</h1>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Set Up Emulator</h3>
+              <p>
+                Download and install
+                <a
+                  href="https://cemu.info/releases/cemu_1.26.2.zip"
+                  target="_blank"
+                  >Cemu 1.26.2</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Install Game</h3>
+              <p>Dump your legitimate copy of BotW and import it into Cemu</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Install BCML</h3>
+              <p>
+                Install
+                <a
+                  href="https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe"
+                  target="_blank"
+                  >Python 3.8.10</a
+                >
+                and run <code>pip install bcml</code>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Set Up Mod</h3>
+              <p>
+                Download and install
+                <a
+                  href="https://github.com/MilkBarModding/MilkBarLauncher/releases/latest"
+                  target="_blank"
+                  >MilkBarLauncher</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="detailed-guide">
+        <h2>Comprehensive Setup Guide</h2>
+
+        <section class="setup-section">
+          <h3>1. Emulator Setup</h3>
+          <div class="guide-content">
+            <div class="step-details">
+              <h4>Installing Cemu</h4>
+              <ul>
+                <li>
+                  Download
+                  <a
+                    href="https://cemu.info/releases/cemu_1.26.2.zip"
+                    target="_blank"
+                    >Cemu 1.26.2</a
+                  >
+                  (specific version required)
+                </li>
+                <li>
+                  Install to a safe directory (recommended: C:\Program Files\)
+                </li>
+                <li>
+                  Important: Do not use other versions as they may cause
+                  compatibility issues
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="setup-section">
+          <h3>2. Game Installation</h3>
+          <div class="guide-content">
+            <div class="step-details">
+              <h4>Installing BotW</h4>
+              <ol>
+                <li>Dump your legitimate copy of Breath of the Wild</li>
+                <li>In Cemu, go to File > Install game title, Update or DLC</li>
+                <li>Navigate to your game's meta folder and select meta.xml</li>
+                <li>Repeat for Update and DLC packages</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="setup-section">
+          <h3>3. Mod Loader Setup</h3>
+          <div class="guide-content">
+            <div class="step-details">
+              <h4>Installing BCML</h4>
+              <ol>
+                <li>
+                  Install
+                  <a
+                    href="https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe"
+                    target="_blank"
+                    >Python 3.8.10</a
+                  >
+                  or newer
+                </li>
+                <li>
+                  Open Command Prompt and run: <code>pip install bcml</code>
+                </li>
+                <li>Run BCML by typing <code>bcml</code> in Command Prompt</li>
+                <li>Follow the initial setup process</li>
+                <li>
+                  Verify Cemu folder contains both Cemu.exe and settings.xml
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="setup-section">
+          <h3>4. Multiplayer Mod Installation</h3>
+          <div class="guide-content">
+            <div class="step-details">
+              <h4>Setting up MilkBar Launcher</h4>
+              <ol>
+                <li>
+                  Download
+                  <a
+                    href="https://github.com/MilkBarModding/MilkBarLauncher/releases/latest"
+                    target="_blank"
+                    >MilkBarLauncher.zip</a
+                  >
+                </li>
+                <li>Extract to C:\BOTWMP\</li>
+                <li>
+                  In BCML:
+                  <ul>
+                    <li>Press Ctrl + I</li>
+                    <li>Click Browse</li>
+                    <li>Select C:\BOTWMP\BNPs\MilkBarLauncher.bnp</li>
+                    <li>Click Install</li>
+                    <li>Press Ctrl + M to merge mods</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="setup-section">
+          <h3>5. Final Configuration</h3>
+          <div class="guide-content">
+            <div class="step-details">
+              <h4>Graphics and Mod Settings</h4>
+              <ol>
+                <li>
+                  In Cemu, right-click BotW and select "Edit graphic packs"
+                </li>
+                <li>
+                  Enable the following:
+                  <ul>
+                    <li>BCML (under Mods)</li>
+                    <li>Extended Memory (under Mods)</li>
+                    <li>Utilities (under Multiplayer)</li>
+                  </ul>
+                </li>
+                <li>
+                  In Cemu Options > General Settings > Graphics:
+                  <ul>
+                    <li>Enable asynchronous shader compilation</li>
+                  </ul>
+                </li>
+                <li>
+                  Launch the game and save after leaving the Shrine of
+                  Resurrection
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="setup-section">
+          <h3>6. Multiplayer Connection</h3>
+          <div class="guide-content">
+            <div class="step-details">
+              <h4>For Hosts</h4>
+              <ol>
+                <li>
+                  Install
+                  <a href="https://www.radmin-vpn.com/" target="_blank"
+                    >Radmin VPN</a
+                  >
+                </li>
+                <li>
+                  Create a network and note down the network name and password
+                </li>
+                <li>
+                  Launch the dedicated server from
+                  C:\BOTWMP\DedicatedServer\MBL.DedicatedServer.exe
+                </li>
+              </ol>
+
+              <h4>For Clients</h4>
+              <ol>
+                <li>
+                  Install
+                  <a href="https://www.radmin-vpn.com/" target="_blank"
+                    >Radmin VPN</a
+                  >
+                </li>
+                <li>
+                  Join the host's network using their network name and password
+                </li>
+                <li>Open C:\BOTWMP\MilkBarLauncher.exe</li>
+                <li>
+                  Click "Add Server" and configure:
+                  <ul>
+                    <li>Name: (your choice)</li>
+                    <li>IP: (VPN IP from host)</li>
+                    <li>Port: 5050</li>
+                    <li>Password: (leave blank)</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="setup-section faq">
+          <h3>Frequently Asked Questions</h3>
+          <div class="guide-content">
+            <div class="faq-item">
+              <h4>Does the version of Cemu matter?</h4>
+              <p>
+                Yes, version 1.26.2 is required. Other versions may cause issues
+                with the Milk Bar Launcher.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>Having trouble with pip install bcml?</h4>
+              <p>
+                If you see Rust-related errors or other issues, try running:
+                <code>python.exe -m pip install bcml</code> from your Python
+                installation directory.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>How do I play different gamemodes?</h4>
+              <p>
+                The dedicated server supports various modes. Enter 1 on startup
+                to select a gamemode. Use the help command for specific mode
+                instructions.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

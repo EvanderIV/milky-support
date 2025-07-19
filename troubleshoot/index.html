@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Troubleshoot - Milky Support</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" href="../favicon.jpg" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="../"><div class="logo">Milky Support</div></a>
+      <div class="nav-links">
+        <a href="../setup">Setup Guide</a>
+        <a>Troubleshooting</a>
+        <a href="https://discord.com/invite/sqeKHhBJse" target="_blank"
+          >Discord</a
+        >
+      </div>
+    </nav>
+
+    <div id="tos-overlay">
+      <div id="tos-modal">
+        <h2>Terms of Service</h2>
+        <div class="tos-content">
+          <p>
+            This website and its chatbot are unofficial resources and are not
+            affiliated with, endorsed by, or in any way connected to Milk Bar
+            Studios, Nintendo, or any of their associated brands or products.
+            The information provided here is for informational purposes only and
+            is based on community-sourced solutions for a popular The Legend of
+            Zelda: Breath of the Wild multiplayer mod.
+          </p>
+          <p>
+            By using this service, you acknowledge and agree that you are solely
+            responsible for any and all damages that may occur to your game,
+            save files, computer hardware, or software as a result of applying
+            any information or fixes obtained from this website. The creators of
+            this site are not liable for any issues—legal or personal—that may
+            arise. Proceed at your own risk.
+          </p>
+        </div>
+        <div class="tos-checkboxes">
+          <label>
+            <input type="checkbox" id="tos-agree" /> I have read and agree to
+            the terms of service.
+          </label>
+          <label>
+            <input type="checkbox" id="piracy-affirm" /> I affirm that I am
+            using a legitimate, legally-owned dump of The Legend of Zelda:
+            Breath of the Wild.
+          </label>
+        </div>
+        <button id="agree-button" disabled>Continue</button>
+      </div>
+    </div>
+
+    <div id="chat-container">
+      <div id="chat-log">
+        <div class="chat-message bot">
+          <img src="chatbot.jpg" alt="Bot PFP" class="pfp" />
+          <div class="message-content">
+            <p>Welcome to Milky Support! What can I help you with?</p>
+          </div>
+        </div>
+      </div>
+      <div id="input-area">
+        <div id="suggested-queries">
+          <button class="query-btn">Where do I start?</button>
+          <button class="query-btn">Game is crashing</button>
+          <button class="query-btn">Can't see my friend</button>
+          <button class="query-btn">Hamachi connection issues</button>
+          <button class="query-btn">Pipe error</button>
+        </div>
+        <div id="chat-input-wrapper">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Describe your issue here..."
+          />
+          <button id="send-btn">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
