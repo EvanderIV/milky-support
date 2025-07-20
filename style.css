@@ -1401,3 +1401,38 @@ a {
 .no-select {
   user-select: none;
 }
+
+/* Responsive adjustments for very small screens */
+@media screen and (max-width: 500px) {
+  .hero-content {
+    margin-top: -70% !important;
+  }
+
+  .cta-button {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Responsive adjustments for very small screens */
+@media screen and (max-width: 400px) {
+  .hero-content {
+    margin-top: -70% !important;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.5rem !important;
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Responsive adjustments for very small screens */
+@media screen and (max-width: 380px) {
+  .hero-content {
+    margin-top: -70% !important;
+  }
+
+  .cta-button {
+    padding: 0.7rem 1.3rem !important;
+    font-size: 0.9rem !important;
+  }
+}
