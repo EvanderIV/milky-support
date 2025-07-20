@@ -10,13 +10,33 @@
   </head>
   <body>
     <nav class="navbar">
-      <a><div class="logo">Milky Support</div></a>
+      <div class="nav-container">
+        <a class="logo">
+          <span class="logo-text">Milky Support</span>
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
       <div class="nav-links">
-        <a href="setup">Setup Guide</a>
-        <a href="troubleshoot/">Troubleshooting</a>
-        <a href="https://discord.com/invite/sqeKHhBJse" target="_blank"
-          >Discord</a
+        <a href="setup" class="nav-link">
+          <span class="nav-icon">📖</span>
+          Setup Guide
+        </a>
+        <a href="troubleshoot/" class="nav-link">
+          <span class="nav-icon">🔧</span>
+          Troubleshooting
+        </a>
+        <a
+          href="https://discord.com/invite/sqeKHhBJse"
+          target="_blank"
+          class="nav-link"
         >
+          <span class="nav-icon">💬</span>
+          Discord
+        </a>
       </div>
     </nav>
 
