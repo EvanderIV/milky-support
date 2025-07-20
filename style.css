@@ -60,10 +60,13 @@ body::before {
 }
 
 .logo {
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
   font-weight: bold;
+  color: #fff;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-radius: 8px;
   transition: background-color 0.3s;
 }
@@ -1038,30 +1041,6 @@ a {
 
 .nav-icon {
   font-size: 1.2rem;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
-
-.logo:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.logo-text {
-  background: linear-gradient(45deg, #7289da, #99aab5);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
 }
 
 /* Mobile Responsive Styles */
